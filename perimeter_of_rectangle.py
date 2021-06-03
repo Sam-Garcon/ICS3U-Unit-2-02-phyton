@@ -1,25 +1,26 @@
 #!/usr/bin/env python3
 
-# Created by: Sam. Garcon
-# Created on: April 2021
-# This program calculates the area and perimeter of a rectangle
-# with radius inputted from the user
+# Created by:Sam. Garcon
+# Created on:April 2021
+# This program calculates the area and perimeter of a circle
+#    with radius inputted from the user
 
+def main():
+    # this function calculates area and perimeter
 
-# Area & Perimeter of Rectangle
+    # input
+    length = float(input("Enter length of the rectangle: "))
+    width = float(input("Enter width of the rectangle: "))
 
-# Reading length from user
-length = float(input("Enter length of the rectangle: "))
+    # process
+    perimeter = 2 * (length + width)
+    area = width * length 
 
-# Reading breadth from user
-width = float(input("Enter width of the rectangle: "))
+    # output
+    print("")
+    print("Area is {0} mm².".format(area))
+    print("Perimeter is {0} mm.".format(perimeter))
 
-# Calculating area
-area = length * width
-
-# Calculating perimeter
-perimeter = 2 * (length + width)
-
-# Displaying results
-print("Area of rectangle = ", area)
-print("Perimeter of rectangle = ", perimeter)
+if __name__ == "__main__":
+    main()
+    
